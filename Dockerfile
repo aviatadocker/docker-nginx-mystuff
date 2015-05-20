@@ -1,9 +1,9 @@
 # Pull base image.
-FROM ubuntu:14.04
+FROM aviata/ubuntu
 
 # Install Nginx.
 RUN \
-  apt-get install -y software-properties-common && \
+#  apt-get install -y software-properties-common && \
   add-apt-repository -y ppa:nginx/stable && \
   apt-get update && \
   apt-get -y upgrade && \
